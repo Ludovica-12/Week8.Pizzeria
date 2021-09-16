@@ -3,54 +3,58 @@
 <head>
     <meta charset="utf-8" />
     <link href="CSS/Style.css" rel="stylesheet" />
-    <script src="JavascriptPizzeria.js"></script>
+    <script src="JS/JavascriptPizzeria.js"></script>
     <title>Conferma Ordine</title>
 </head>
 <body onload="showBill()">
 
     <h3 class="ordina">Procedi all'ordine</h3>
 
-    <p id="bill"></p>
+    <main>
 
-    <form id="ordine">
-        <label class="campo">Nome:</label>
-        <input type="text" required placeholder="Inserisci il tuo nome" />
+        <p id="bill"></p>
 
-        <br />
-        <br />
+        <form id="ordine">
+            <label class="campo">Nome:</label>
+            <input type="text" required placeholder="Inserisci il tuo nome" />
 
-        <label class="campo">Cognome:</label>
-        <input type="text" required placeholder="Inserisci il tuo cognome" />
+            <br />
+            <br />
 
-        <br />
-        <br />
+            <label class="campo">Cognome:</label>
+            <input type="text" required placeholder="Inserisci il tuo cognome" />
 
-        <label class="campo">Indirizzo:</label>
-        <input type="text" required placeholder="Inserisci il tuo indirizzo" />
+            <br />
+            <br />
 
-        <br />
-        <br />
+            <label class="campo">Indirizzo:</label>
+            <input type="text" required placeholder="Inserisci il tuo indirizzo" />
 
-        <label class="campo">Cellulare:</label>
-        <input type="number" required placeholder="Inserisci il tuo cellulare" />
+            <br />
+            <br />
 
-        <br />
-        <br />
-        <label class="campo">Metodo di pagamento:</label>
-        <label class="campo"> <input type="radio" value="1" name="metodoPagamento" onchange="showCardInput()" /> Contanti </label>
-        <label class="campo"> <input type="radio" value="2" name="metodoPagamento" onchange="showCardInput()" /> Carta </label>
-        <br /> <br />
-        <div id="codiceCarta" style="display:none">
-            <label>Codice carta</label>
-            <input type="text" required />
-        </div>
+            <label class="campo">Cellulare:</label>
+            <input type="number" required placeholder="Inserisci il tuo cellulare" />
 
-        <br />
-        <br />
+            <br />
+            <br />
+            <label class="campo">Metodo di pagamento:</label>
+            <label class="campo"> <input type="radio" value="1" name="metodoPagamento" onchange="showCardInput()" /> Contanti </label>
+            <label class="campo"> <input type="radio" value="2" name="metodoPagamento" onchange="showCardInput()" /> Carta </label>
+            <br /> <br />
+            <div id="codiceCarta" style="display:none">
+                <label>Codice carta</label>
+                <input type="text" required />
+            </div>
 
-        <input type="submit" value="Ordina" class="bottone" />
+            <br />
+            <br />
 
-    </form>
+            <input type="submit" value="Ordina" class="bottone" />
+
+        </form>
+
+    </main>
 
 </body>
 </html>

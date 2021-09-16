@@ -45,5 +45,5 @@ function showBill() {
     let bill = localStorage.getItem("conto");
 
     //Cambio il contenuto del paragrafo con il conto recuperato dallo storage
-    billPar.innerHTML = "Stai per pagare: " + bill + "€";
+    billPar.innerHTML = "Stai per pagare: " + bill + "&euro;";
 }

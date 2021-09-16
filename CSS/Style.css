@@ -140,9 +140,13 @@ nav ul li:hover{
     margin-bottom:30px;
 }
 
+#bill{
+    color:#fff;
+}
+
 #ordine {
     border: 1px solid #E6E6E6;
-    width:28%;
+    width:35%;
     padding:15px;
     text-align:center;
 
