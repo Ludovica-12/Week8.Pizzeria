@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/icon.jpg">
+    <script src="JavascriptPizzeria.js"></script>
+    <link href="CSS/Style.css" rel="stylesheet" />
+    <title>Menu</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="Home.html">Home</a>
+            </li>
+            <li>
+                <a href="Menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="Contatti.html">Contatti</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="menu">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Pizza</th>
+                    <th>Ingredienti</th>
+                    <th>Prezzo</th>
+                    <th>Seleziona</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/margherita.jpg" /></td>
+                    <td>Margherita</td>
+                    <td>Pomodoro, Mozzarella, Basilico</td>
+                    <td class="price">6&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Crostino</td>
+                    <td>Mozzarella, Prosciutto Cotto</td>
+                    <td class="price">5&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td><img src="img/pizzamenu1.jpg" /></td>
+                    <td>Funghi</td>
+                    <td>Pomodoro, Mozzarella, Funghi</td>
+                    <td class="price">6&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Marinara</td>
+                    <td>Pomodoro, Aglio in polvere</td>
+                    <td class="price">4&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td><img src="img/pizzamenu2.jpg" /></td>
+                    <td>Capricciosa</td>
+                    <td>Pomodoro, Mozzarella, ProsiuttoCotto, Olive</td>
+                    <td class="price">8&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Boscaiola</td>
+                    <td>Pomodoro,Funghi, Fior di latte</td>
+                    <td class="price">5&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>4Formaggi</td>
+                    <td>Provolone, Mozzarella, Emmenthal, Gorgonzola</td>
+                    <td class="price">8&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Diavola</td>
+                    <td>Pomodoro, Mozzarella, Basilico</td>
+                    <td class="price">8&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Wurstel</td>
+                    <td>Pomodoro, Mozzarella, Wrustel</td>
+                    <td class="price">7&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Norma</td>
+                    <td>Pomodoro, Mozzarella, MelanzaneFritte, Ricotta</td>
+                    <td class="price">8&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ortolana</td>
+                    <td>Pomodoro, Mozzarella, Zucchine, Peperoni</td>
+                    <td class="price">7&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Crudo</td>
+                    <td>Pomodoro, Mozzarella, ProsciuttoCrudo</td>
+                    <td class="price">4&euro;</td>
+                    <td><input type="checkbox" value="1" name="ordina" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a id="goOn" href="ConfermaOrdine.html"><input onclick="calcBill();" type="button" value="Check-Out" /></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer>
+        <p>Pizzeria Golocious </p>
+    </footer>
+
+</body>
+</html>

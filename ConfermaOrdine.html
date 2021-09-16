@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="CSS/Style.css" rel="stylesheet" />
+    <script src="JavascriptPizzeria.js"></script>
+    <title>Conferma Ordine</title>
+</head>
+<body onload="showBill()">
+
+    <h3 class="ordina">Procedi all'ordine</h3>
+
+    <p id="bill"></p>
+
+    <form id="ordine">
+        <label class="campo">Nome:</label>
+        <input type="text" required placeholder="Inserisci il tuo nome" />
+
+        <br />
+        <br />
+
+        <label class="campo">Cognome:</label>
+        <input type="text" required placeholder="Inserisci il tuo cognome" />
+
+        <br />
+        <br />
+
+        <label class="campo">Indirizzo:</label>
+        <input type="text" required placeholder="Inserisci il tuo indirizzo" />
+
+        <br />
+        <br />
+
+        <label class="campo">Cellulare:</label>
+        <input type="number" required placeholder="Inserisci il tuo cellulare" />
+
+        <br />
+        <br />
+        <label class="campo">Metodo di pagamento:</label>
+        <label class="campo"> <input type="radio" value="1" name="metodoPagamento" onchange="showCardInput()" /> Contanti </label>
+        <label class="campo"> <input type="radio" value="2" name="metodoPagamento" onchange="showCardInput()" /> Carta </label>
+        <br /> <br />
+        <div id="codiceCarta" style="display:none">
+            <label>Codice carta</label>
+            <input type="text" required />
+        </div>
+
+        <br />
+        <br />
+
+        <input type="submit" value="Ordina" class="bottone" />
+
+    </form>
+
+</body>
+</html>
